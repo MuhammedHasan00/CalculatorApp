@@ -1,0 +1,107 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #a2d2ff;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    scale: 0.8;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(28, 46, 74);
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 600px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-color:rgb(35, 57, 93) ;
+    color: white;
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 10px;
+    
+}
+
+.input{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: -10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.output{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    font-size: 4rem;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.operator{
+    color: #ff2c2c;
+    font-size: 2rem;
+}
+
+.action{
+    color: #33c7d8;
+}
+.backspace{
+    font-size: 2.5rem;
+}
+
+.key{
+    position: relative;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding: 35%;
+    background-color: rgb(35, 57, 93);
+    border-radius: 5px;
+}
+
+.keys div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 400px){
+    .app{
+        scale: 0.6;
+    }
+}
